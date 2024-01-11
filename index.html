@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js Template</title>
+</head>
+
+<body>
+    <div class="" id="app">
+        <p>
+            <strong>Bound:</strong>
+            <span>{{name}}</span>
+        </p>
+        <p>
+            <strong>Parsed:</strong>
+            <span v-html="name"></span>
+        </p>
+        <p v-once="name">
+            <strong>Unchangeable:</strong>
+            <span>{{name}}</span>
+        </p>
+
+        <h5>
+            <textarea name="" id="" cols="30" rows="10" v-model="name"></textarea>
+        </h5>
+
+        <b>Fadli</b>
+    </div>
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
